@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Setup up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
+      - name: "python black check"
+        uses: RojerGS/python-black-check@master
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
