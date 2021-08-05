@@ -30,3 +30,7 @@ jobs:
           pip install black
           black . --check
       
+      - name: Running pytest
+        run: | 
+          pytest demo_pytest/test_my_awesome_module.py
+      
