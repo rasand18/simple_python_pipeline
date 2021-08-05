@@ -1,5 +1,3 @@
-
-
 def bin_number_to_tens(input_value: float) -> str:
     if input_value < 0:
         raise NotImplementedError("Not implemented for values below zero!")
