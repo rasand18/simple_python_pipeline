@@ -11,7 +11,6 @@ To run:
 """
 
 
-
 def test_this_will_always_pass():
     # Assert:
     assert True
@@ -26,7 +25,6 @@ def test_bin_my_number():
 
     # Assert:
     assert result == "[10-20)"
-
 
 
 @pytest.mark.parametrize(
@@ -59,4 +57,3 @@ def test_assert_raising_error():
     # Act and Assert:
     with pytest.raises(NotImplementedError) as my_error:
         result = bin_number_to_tens(input_value)
-
