@@ -11,10 +11,6 @@ To run:
 """
 
 
-def test_this_will_always_crash():
-    # Assert:
-    assert False
-
 
 def test_this_will_always_pass():
     # Assert:
@@ -31,16 +27,6 @@ def test_bin_my_number():
     # Assert:
     assert result == "[10-20)"
 
-
-def test_bin_my_number_FAILING():
-    # Arrange:
-    input_value = "This input will crash the function"
-
-    # Act:
-    result = bin_number_to_tens(input_value)
-
-    # Assert:
-    assert result == "[10-20)"
 
 
 @pytest.mark.parametrize(
@@ -74,11 +60,3 @@ def test_assert_raising_error():
     with pytest.raises(NotImplementedError) as my_error:
         result = bin_number_to_tens(input_value)
 
-
-def test_assert_raising_error_FAILING():
-    # Arrange:
-    input_value = 10
-
-    # Act and Assert:
-    with pytest.raises(NotImplementedError) as my_error:
-        result = bin_number_to_tens(input_value)
