@@ -10,6 +10,7 @@ To run:
 
 """
 
+
 def test_this_will_always_crash():
     # Assert:
     assert False
@@ -53,12 +54,12 @@ def test_bin_my_number_FAILING():
         (5, "[0-10)"),
         (15, "[10-20)"),
         (25, "[20-30)"),
-    ]
+    ],
 )
 def test_bin_over_many_inputs_by_using_parameterize(input_value, expected):
     # Arrange is already done, oh yeah!
 
-    # Act    
+    # Act
     result = bin_number_to_tens(input_value)
 
     # Assert

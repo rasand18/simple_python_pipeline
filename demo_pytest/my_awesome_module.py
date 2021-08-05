@@ -9,5 +9,3 @@ def bin_number_to_tens(input_value: float) -> str:
         return "[20-30)"
     else:
         raise NotImplementedError("Not implemented for values above 30!")
-
-

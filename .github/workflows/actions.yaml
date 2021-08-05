@@ -27,5 +27,6 @@ jobs:
       
       - name: check formatting with  black 
         run: |
+          pip install black
           black . --check
       
